@@ -1,0 +1,50 @@
+[
+  {
+    "img": "https://i.ibb.co/mT28mCb/rice.png",
+    "name": "Rice",
+    "supplier": "Iman Ali",
+    "quantity": "300",
+    "price": "$450",
+    "description": "Rice is the seed of the grass species Oryza sativa or less commonly Oryza glaberrima. The name wild rice is usually used for species of the genera Zizania and Porteresia, both wild and domesticated, although the term may also be used for primitive or uncultivated varieties of Oryza"
+  },
+  {
+    "img": "https://i.ibb.co/BzMnpzj/potato.png",
+    "name": "potato",
+    "supplier": "Babul mia",
+    "quantity": "300 pack",
+    "price": "$550",
+    "description": "Potatoes were introduced to Europe from the Americas in the second half of the 16th century by the Spanish. Today they are a staple food in many parts of the world and an integral part of much of the world's food supply"
+  },
+  {
+    "img": "https://i.ibb.co/mRg8LWJ/onion.png",
+    "name": "Onion",
+    "supplier": "Rashed Ali",
+    "quantity": "300 pack",
+    "price": "$450",
+    "description": "The onion plant has a fan of hollow, bluish-green leaves and its bulb at the base of the plant begins to swell when a certain day-length is reached. The bulbs are composed of shortened, compressed, underground stems surrounded by fleshy modified scale (leaves) that envelop a central bud at the tip of the stem"
+  },
+  {
+    "img": "https://i.ibb.co/FDj7zxk/salt-1.png",
+    "name": "Salt",
+    "supplier": "Abutaher Ali",
+    "quantity": "500 pack",
+    "price": "$450",
+    "description": "Salt is a mineral composed primarily of sodium chloride (NaCl), a chemical compound belonging to the larger class of salts; salt in the form of a natural crystalline mineral is known as rock salt or halite. Salt is present in vast quantities in seawater"
+  },
+  {
+    "img": "https://i.ibb.co/3vQVJ81/shup1.png",
+    "name": "Shup",
+    "supplier": "Raju Ahemmed",
+    "quantity": "300",
+    "price": "$150",
+    "description": "Shup is the seed of the grass species Oryza sativa or less commonly Oryza glaberrima. The name wild rice is usually used for species of the genera Zizania and Porteresia, both wild and domesticated, although the term may also be used for primitive or uncultivated varieties of Oryza"
+  },
+  {
+    "img": "https://i.ibb.co/7vbpQMr/oil.png",
+    "name": "Oil",
+    "supplier": " Ali heyder",
+    "quantity": "300 pice",
+    "price": "$150",
+    "description": "OIL is engaged in the business of exploration, development and production of crude oil and natural gas, transportation of crude oil and production of liquid petroleum gas."
+  }
+]
