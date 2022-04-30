@@ -1,5 +1,10 @@
-input {
+.form-container {
   width: 50%;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
   display: block;
   margin: 0 auto;
   margin-bottom: 10px;
