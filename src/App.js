@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login";
 import Register from "./Pages/Register/Register";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
+import Restock from "./Pages/Restock/Restock";
 import StockUpdate from "./Pages/StockUpdate/StockUpdate";
 
 function App() {
@@ -21,6 +22,14 @@ function App() {
           element={
             <RequireAuth>
               <StockUpdate></StockUpdate>
+            </RequireAuth>
+          }
+        ></Route>
+        <Route
+          path="/restock/:id"
+          element={
+            <RequireAuth>
+              <Restock></Restock>
             </RequireAuth>
           }
         ></Route>
