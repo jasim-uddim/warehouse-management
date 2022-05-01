@@ -5,7 +5,6 @@ import Blogs from "./Pages/Blogs/Blogs";
 import Header from "./Pages/Header/Header";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login";
-import ManegeItems from "./Pages/ManegeItems/ManegeItems";
 import ManegeProduct from "./Pages/ManegeProduct/ManegeProduct";
 import MyItems from "./Pages/MyItems/MyItems";
 import Register from "./Pages/Register/Register";
