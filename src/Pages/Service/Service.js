@@ -18,7 +18,7 @@ const Service = ({ service }) => {
         <p>quantity: {quantity}</p>
         <p>{description}</p>
       </div>
-      <Link to="#" className="mx-4 text-decoration-none">
+      <Link to="/manege" className="mx-4 text-decoration-none">
         manege item
       </Link>
       <div className="text-end mx-4">

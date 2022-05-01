@@ -37,7 +37,7 @@ const StockProduct = () => {
       });
   };
 
-  const handleRestock = () => {
+  const handleRestock = (e) => {
     const updated = product;
     if (restock > 0) {
       restock
@@ -57,6 +57,7 @@ const StockProduct = () => {
         setProduct(updated);
         // alert("product Delevard successfully!!!");
       });
+    e.target.reset();
   };
   return (
     <div>
