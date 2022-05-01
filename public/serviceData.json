@@ -46,5 +46,29 @@
     "quantity": "300",
     "price": "150",
     "description": "OIL is engaged in the business of exploration, development and production of crude oil and natural gas, transportation of crude oil and production of liquid petroleum gas."
+  },
+  {
+    "img": "https://i.ibb.co/sbjtKNg/service4.png",
+    "name": "Teams Deliver",
+    "supplier": "jary chak",
+    "quantity": "300",
+    "price": "150",
+    "description": " Operations & Development Teams Deliver More Customer Impact While Managing Risk. Transparent Pricing. 25% Fewer Tickets. Streamline Workflows. Accelerated ITSM. For High-Velocity Teams. Resolve Problems Faster. Services: Easy to Set Up, Major Incident Management.."
+  },
+  {
+    "img": "https://i.ibb.co/HK3DVQs/service5.png",
+    "name": "IT Support",
+    "supplier": "Humayra jary",
+    "quantity": "300",
+    "price": "150",
+    "description": "Revamp Your IT Support. Customize workflows & set up automations. Signup now! Powerful IT Help Desk Automation Tool To Manage Incidents, Assets & More. Easily Customizable. Flexible plans. Complete Security. World class support. Easy to Use.."
+  },
+  {
+    "img": "https://i.ibb.co/0nmm86Z/service6.png",
+    "name": "special service",
+    "supplier": "Rocks smeth",
+    "quantity": "300",
+    "price": "150",
+    "description": "Get Results for Fresh Service. Find Quick Results from Multiple Sources. Quick Results - Search for Relevant Info & Results. Easy Acces To Information. Discover us now! Fast and trusted. Simple in use. All the Answers. Multiple sources combined. Types: Information, Combined Web Results."
   }
 ]

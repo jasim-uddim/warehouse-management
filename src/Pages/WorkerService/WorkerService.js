@@ -1,8 +1,7 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Service from "../Service/Service";
 
-const Services = () => {
+const WorkerService = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
@@ -12,9 +11,9 @@ const Services = () => {
   }, []);
   return (
     <div id="service">
-      <h1 className="text-center text-primary">Our Inventory</h1>
-      <div className="row g-3">
-        {services.slice(0, 6).map((service) => (
+      <h1 className="text-center text-primary my-3">Our worker service</h1>
+      <div className="row">
+        {services.slice(6, 9).map((service) => (
           <Service key={service._id} service={service}></Service>
         ))}
       </div>
@@ -22,4 +21,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default WorkerService;
