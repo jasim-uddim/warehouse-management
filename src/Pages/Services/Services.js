@@ -11,7 +11,7 @@ const Services = () => {
       .then((data) => setServices(data));
   }, []);
   return (
-    <div id="service">
+    <div>
       <h1 className="text-center text-primary">Our Inventory</h1>
       <div className="row g-3">
         {services.slice(0, 6).map((service) => (

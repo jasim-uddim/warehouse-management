@@ -6,6 +6,7 @@ import Header from "./Pages/Header/Header";
 import Home from "./Pages/Home/Home/Home";
 import Login from "./Pages/Login/Login";
 import ManegeItems from "./Pages/ManegeItems/ManegeItems";
+import ManegeProduct from "./Pages/ManegeProduct/ManegeProduct";
 import MyItems from "./Pages/MyItems/MyItems";
 import Register from "./Pages/Register/Register";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
@@ -33,7 +34,7 @@ function App() {
           path="/manege"
           element={
             <RequireAuth>
-              <ManegeItems></ManegeItems>
+              <ManegeProduct></ManegeProduct>
             </RequireAuth>
           }
         ></Route>
