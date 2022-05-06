@@ -8,7 +8,7 @@ const Register = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [createUserWithEmailAndPassword, user, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   let from = location.state?.from?.pathname || "/";
 
   let errorElement;
