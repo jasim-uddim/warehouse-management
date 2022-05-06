@@ -5,7 +5,7 @@ const ManegeProduct = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("are you sure delete");
     if (proceed) {
-      const url = `http://localhost:5000/service/${id}`;
+      const url = `http://localhost:5001/service/${id}`;
       fetch(url, {
         method: "DELETE",
       })

@@ -1,56 +1,111 @@
-import React from "react";
+import { useForm } from "react-hook-form";
+import useServices from "../../hooks/useServices";
 
 const AddItems = () => {
-  const handleAddItem = (event) => {
-    event.preventDefault();
-    const name = event.target.name.value;
-    const supplier = event.target.supplier.value;
-    const price = event.target.price.value;
-    const quantity = event.target.quantity.value;
-    const photoUrl = event.target.photoUrl.value;
-    const description = event.target.description.value;
-    console.log(name, supplier, price, quantity, photoUrl, description);
-    event.target.reset();
+  const [items, steItems] = useServices();
+  const { register, handleSubmit } = useForm();
 
-    const url = `http://localhost:5000/service`;
-    fetch(url, {
+  const onSubmit = (data) => {
+    fetch("http://localhost:5001/service", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(),
+      body: JSON.stringify(data),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((result) => {
+        const newItems = [...items, data];
+        steItems(newItems);
+        alert("Items Added successfully");
+      });
   };
+
   return (
     <div>
       <h1
         className="text-center
       text-primary"
       >
-        please add items
+        Please add items
       </h1>
       <div className="form-container">
-        <form onSubmit={handleAddItem}>
-          <input type="text" name="name" id="" placeholder="name" />
-          <input
-            type="text"
-            name="supplier"
-            id=""
-            placeholder="supplier name"
-          />
-          <input type="number" name="price" id="" placeholder="price" />
-          <input type="number" name="quantity" id="" placeholder="quantity" />
-          <input type="text" name="photoUrl" id="" placeholder="url" />
-          <textarea
-            type="text"
-            name="description"
-            id=""
-            placeholder="description"
-          />
-
-          <input type="submit" value="add items" />
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <div className="my-3">
+            <label htmlFor="name" className="form-label">
+              Product Name
+            </label>
+            <input
+              className="form-control"
+              {...register("name")}
+              placeholder="Name"
+              id="name"
+              required
+            />
+          </div>
+          <div className="my-3">
+            <label htmlFor="supplier" className="form-label">
+              Supplier Name
+            </label>
+            <input
+              className="form-control"
+              {...register("supplier")}
+              placeholder="Supplier Name"
+              id="supplier"
+              required
+            />
+          </div>
+          <div className="my-3">
+            <label htmlFor="quantity" className="form-label">
+              Quantity
+            </label>
+            <input
+              className="form-control"
+              {...register("quantity")}
+              type="number"
+              placeholder="Quantity"
+              id="quantity"
+              required
+            />
+          </div>
+          <div className="my-3">
+            <label htmlFor="price" className="form-label">
+              Price
+            </label>
+            <input
+              className="form-control"
+              {...register("price")}
+              type="number"
+              placeholder="Price"
+              id="price"
+              required
+            />
+          </div>
+          <div className="my-3">
+            <label htmlFor="description" className="form-label">
+              Description
+            </label>
+            <textarea
+              className="form-control"
+              {...register("description")}
+              placeholder="Description"
+              id="description"
+              required
+            />
+          </div>
+          <div className="my-3">
+            <label htmlFor="img" className="form-label">
+              Image Url
+            </label>
+            <input
+              className="form-control"
+              {...register("img")}
+              placeholder="Image URL"
+              id="img"
+              required
+            />
+          </div>
+          <input type="submit" value="Add Items" />
         </form>
       </div>
     </div>

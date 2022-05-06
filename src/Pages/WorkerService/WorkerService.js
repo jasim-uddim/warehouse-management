@@ -5,7 +5,7 @@ const WorkerService = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/service")
+    fetch("http://localhost:5001/service")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
