@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Service from "../Service/Service";
+import ExtraPage from "../ExtraPage/ExtraPage";
 
 const WorkerService = () => {
   const [services, setServices] = useState([]);
@@ -15,7 +15,7 @@ const WorkerService = () => {
         <h1 className="text-center text-primary my-3">Our worker service</h1>
         <div className="row">
           {services.slice(6, 9).map((service) => (
-            <Service key={service._id} service={service}></Service>
+            <ExtraPage key={service._id} service={service}></ExtraPage>
           ))}
         </div>
       </section>
@@ -23,7 +23,7 @@ const WorkerService = () => {
         <h1 className="text-center text-primary my-3">Our online service</h1>
         <div className="row">
           {services.slice(9, 12).map((service) => (
-            <Service key={service._id} service={service}></Service>
+            <ExtraPage key={service._id} service={service}></ExtraPage>
           ))}
         </div>
       </section>

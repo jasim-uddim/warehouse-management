@@ -1,17 +1,23 @@
 import { useForm } from "react-hook-form";
 import useServices from "../../hooks/useServices";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
 
 const AddItems = () => {
+  const [user] = useAuthState(auth);
+
   const [items, steItems] = useServices();
   const { register, handleSubmit } = useForm();
 
   const onSubmit = (data) => {
+    const newData = data;
+    newData.email = user.email;
     fetch("http://localhost:5001/service", {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(data),
+      body: JSON.stringify(newData),
     })
       .then((res) => res.json())
       .then((result) => {
