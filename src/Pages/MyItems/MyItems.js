@@ -16,19 +16,19 @@ const MyItems = () => {
   }, [user, items]);
 
   const handleDelete = (id) => {
-    // const proceed = window.confirm("are you sure delete");
-    // if (proceed) {
-    //   const url = `http://localhost:5001/service/${id}`;
-    //   fetch(url, {
-    //     method: "DELETE",
-    //   })
-    //     .then((res) => res.json())
-    //     .then((data) => {
-    //       console.log(data);
-    //       const remaining = items.filter((item) => item._id !== id);
-    //       setItems(remaining);
-    //     });
-    // }
+    const proceed = window.confirm("are you sure delete");
+    if (proceed) {
+      const url = `http://localhost:5001/service/${id}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+          const remaining = items.filter((item) => item._id !== id);
+          setItems(remaining);
+        });
+    }
   };
   return (
     <div>

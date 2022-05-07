@@ -18,16 +18,18 @@ const Service = ({ service }) => {
         <p>quantity: {quantity}</p>
         <p>{description}</p>
       </div>
-      <Link to="/manege" className="mx-4 text-decoration-none">
-        manege item
-      </Link>
-      <div className="text-end mx-4">
-        <button
-          onClick={() => navigateToStockUpdate(_id)}
-          className="bg-primary border-0 rounded text-white p-2"
-        >
-          update
-        </button>
+      <div className="d-flex align-items-center">
+        <Link to="/manege" className="mx-4 text-decoration-none">
+          manege item
+        </Link>
+        <div className="text-end mx-4">
+          <button
+            onClick={() => navigateToStockUpdate(_id)}
+            className="bg-primary border-0 rounded text-white p-2"
+          >
+            update
+          </button>
+        </div>
       </div>
     </div>
   );

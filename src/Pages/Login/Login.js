@@ -12,7 +12,7 @@ import "./Login.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
-  console.log(email);
+
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const location = useLocation();
