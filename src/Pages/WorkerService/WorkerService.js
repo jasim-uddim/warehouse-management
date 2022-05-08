@@ -5,7 +5,7 @@ const WorkerService = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch("https://limitless-taiga-20909.herokuapp.com/")
+    fetch("https://limitless-taiga-20909.herokuapp.com/service")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
