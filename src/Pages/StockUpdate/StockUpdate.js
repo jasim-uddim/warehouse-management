@@ -8,7 +8,7 @@ const StockProduct = () => {
   const [restock, setRestock] = useState(0);
 
   useEffect(() => {
-    const url = `http://localhost:5001/service/${id}`;
+    const url = `https://limitless-taiga-20909.herokuapp.com/${id}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProduct(data));
@@ -23,7 +23,7 @@ const StockProduct = () => {
     }
 
     // send data to the server
-    fetch(`http://localhost:5001/service/${id}`, {
+    fetch(`https://limitless-taiga-20909.herokuapp.com/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -45,7 +45,7 @@ const StockProduct = () => {
         : (updated.quantity = updated.quantity + 1);
     }
     // send data to the server
-    fetch(`http://localhost:5001/service/${id}`, {
+    fetch(`https://limitless-taiga-20909.herokuapp.com/${id}`, {
       method: "PUT",
       headers: {
         "content-type": "application/json",

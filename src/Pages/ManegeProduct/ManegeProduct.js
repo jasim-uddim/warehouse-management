@@ -5,7 +5,7 @@ const ManegeProduct = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("are you sure delete");
     if (proceed) {
-      const url = `http://localhost:5001/service/${id}`;
+      const url = `https://limitless-taiga-20909.herokuapp.com/service${id}`;
       fetch(url, {
         method: "DELETE",
       })

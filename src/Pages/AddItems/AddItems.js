@@ -12,7 +12,7 @@ const AddItems = () => {
   const onSubmit = (data) => {
     const newData = data;
     newData.email = user.email;
-    fetch("http://localhost:5001/service", {
+    fetch("https://limitless-taiga-20909.herokuapp.com/service", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -9,7 +9,7 @@ const MyItems = () => {
   console.log(user);
 
   useEffect(() => {
-    const url = `http://localhost:5001/myservice?email=${email}`;
+    const url = `https://limitless-taiga-20909.herokuapp.com/myservice?email=${email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setItems(data));
@@ -18,7 +18,7 @@ const MyItems = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("are you sure delete");
     if (proceed) {
-      const url = `http://localhost:5001/service/${id}`;
+      const url = `https://limitless-taiga-20909.herokuapp.com/${id}`;
       fetch(url, {
         method: "DELETE",
       })
